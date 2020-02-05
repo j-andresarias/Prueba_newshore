@@ -1,0 +1,112 @@
+/**************************************************** ESTILOS HEADER ******************************************************/
+/* Estilos del titulo de la pagina */
+.header-title{
+
+    background-color: #4a6272;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #79bfd7;
+    clear: both;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Estilo de fondo del header color blanco */
+.home{
+    background-color: #fff;
+}
+
+.header-top{
+    padding: 0px !important;
+}
+
+/* Estilo del titulo official website cambiando su color de letra y poniendola en negrita */
+#web-oficial{
+    color: #3db586 !important;
+    font-weight: bold !important;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+}
+
+/* Se esconde el icono que antecede el titulo "OFFICIAL WEBSITE" ya que en el ejemplo no aparece  */
+.official i::before{
+    display: none !important;
+}
+
+/* Estilo de ancho de la barra de navegacion */
+.idioma {
+    width: 100% !important;
+}
+
+/* Se posiciona el titulo al borde  */
+.header-extra {
+    position: absolute !important;
+}
+
+header div nav a{
+    color: #5F5F61 !important;
+    margin-top: 8px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/***********************************************ESTILOS WRAPPER************************************************************/
+#wrapper{
+    margin-top: 3em;
+}
+
+
+/**************************************************** ESTILOS FOOTER ******************************************************/
+/* Estilo texto footer  */
+footer nav a{
+    color: #099854;
+    font-size: 15px;
+    position: relative;
+}
+
+/* Se oculta el texto "Siguenos en redes sociales ya que en el ejemplo no es visible */
+footer span{
+    display: none;
+}
+
+/* Estilo del hover de enlaces del footer */
+footer nav a:hover{
+    color: #fff;
+}
+
+.footer-fluid{
+    margin-top: 3em;
+}
+.redes {
+    margin-top: 3em;
+}
+
+/* Aumentar el tamaño de los iconos de las redes sociales */
+.fa::before{
+    font-size: 25px;
+}
+
+/* Estilo  imagen de fondo del footer */
+footer{
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+/* Estilo opacidad de imagen footer*/
+footer:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.8);
+}
