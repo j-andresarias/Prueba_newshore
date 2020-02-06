@@ -55,10 +55,50 @@ header div nav a{
 }
 
 /***********************************************ESTILOS WRAPPER************************************************************/
+/* Se realiza el margin del wrapper */
 #wrapper{
     margin-top: 3em;
 }
 
+/* Estilo del cuadro y color de texto   */
+.text-offer_dos{
+margin-left: 1em;
+margin-bottom: 1em;    
+width: 80% !important;
+height: 80% !important;
+color: #fff;
+}
+
+.text b{
+    font-weight: 100 !important;
+}
+/* estilo para opacar la imagen resaltando el texto y el boton */
+.text-offer_dos:before{
+    content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.7);
+} 
+
+/* Estilo del boton */
+.btn{
+    background-color: #00a658;
+    border-radius: 0%;
+    border-style: none;
+    padding: 10px;
+    color: #fff;
+    float: inherit;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.footer-text{
+    color: #515550;
+    background-color: #fff;
+}
 
 /**************************************************** ESTILOS FOOTER ******************************************************/
 /* Estilo texto footer  */
