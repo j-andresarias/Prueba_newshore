@@ -60,17 +60,52 @@ header div nav a{
     margin-top: 3em;
 }
 
-/* Estilo del cuadro y color de texto   */
-.text-offer_dos{
-margin-left: 1em;
-margin-bottom: 1em;    
-width: 80% !important;
-height: 80% !important;
+/* Estilo del cuadro opaco y color de texto   */
+.text-offer_dos{    
+width: 100% !important;
+height: 100% !important;
 color: #fff;
 }
 
+/* Estilo de fondo de seccion de precio  */
+
+.habitacion{
+    background-color: #fff;
+}
+
+.price2{
+    width: 15% !important;
+}
+.detalle{
+    width: 35% !important;
+}
+.foto{
+    width: 50% !important;
+}
+
+/* Estilo de letra del articulo */
+
+/* Color y se transforma el texto a mayuscula */
+.detalle h4{
+    color:#00a658 ;
+    text-transform: uppercase;
+}
+/* estilo de boton */
+.btnReserva{
+    width: 20% !important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Se esconde el icono del calendario */
+.fa-calendar{
+    display: none;
+}
+/* Se reduce grosor del texto  */
 .text b{
     font-weight: 100 !important;
+
+
 }
 /* estilo para opacar la imagen resaltando el texto y el boton */
 .text-offer_dos:before{
@@ -100,6 +135,28 @@ color: #fff;
     background-color: #fff;
 }
 
+#myCarousel2{
+    width: 55%;    
+    float: right;
+    border: 1px gray;
+}
+#myCarousel2:before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 250, 0.8);
+} 
+.carousel-indicators li{
+    background-color: #515550 !important;
+}
+
+.list-offers
+{
+    margin-bottom: 4em;
+}
 /**************************************************** ESTILOS FOOTER ******************************************************/
 /* Estilo texto footer  */
 footer nav a{
