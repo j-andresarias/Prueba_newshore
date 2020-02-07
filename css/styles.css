@@ -62,25 +62,48 @@ header div nav a{
 
 /* Estilo del cuadro opaco y color de texto   */
 .text-offer_dos{    
-width: 100% !important;
-height: 100% !important;
-color: #fff;
+    width: 90% !important;
+    height: 90% !important;
+    color: #fff;
+    margin: auto;
+    max-width: 320px;
+    left: 26px;
+    top: 26px;
+    bottom: 26px !important;
 }
 
 /* Estilo de fondo de seccion de precio  */
 
 .habitacion{
     background-color: #fff;
+    margin-top: 27px;
 }
 
 .price2{
     width: 15% !important;
 }
+
 .detalle{
     width: 35% !important;
+    position: relative;
 }
+/* Estilo para dar forma a la imagen en su recorte */
+.detalle::before
+{
+    content: "";
+    width: 0px;
+    height: 0;
+    border-top: 108px solid transparent;
+    border-bottom: 108px solid transparent;
+    border-right: 30px solid white;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
 .foto{
     width: 50% !important;
+    position: relative;
 }
 
 /* Estilo de letra del articulo */
@@ -89,29 +112,34 @@ color: #fff;
 .detalle h4{
     color:#00a658 ;
     text-transform: uppercase;
+    font-weight: bold !important;
 }
+
 /* estilo de boton */
 .btnReserva{
     width: 20% !important;
     margin-right: 5px;
     margin-bottom: 5px;
+    position: absolute !important;
 }
 
 /* Se esconde el icono del calendario */
 .fa-calendar{
     display: none;
 }
+
 /* Se reduce grosor del texto  */
 .text b{
     font-weight: 100 !important;
 
 
 }
+
 /* estilo para opacar la imagen resaltando el texto y el boton */
 .text-offer_dos:before{
     content:'';
 	position: absolute;
-        top: 0;
+    top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -130,16 +158,40 @@ color: #fff;
     padding-left: 60px;
 }
 
+/* Estilo de la imagen central e imagen derecha  */
 .footer-text{
     color: #515550;
     background-color: #fff;
 }
 
+/* Estilo de los botones de las imagenes central e izquierda */
+.fa-chevron-right::before{
+    content: "\f0fe" !important;
+    color:#00a658 !important;
+    height: 50%;
+}
+
+/* Estilo de posicion de los iconos */
+.arrow{
+    margin-top: 20px;
+}
+
+/* Estilo del slider de la imagen inferior */
 #myCarousel2{
     width: 55%;    
     float: right;
-    border: 1px gray;
+    border: 1px solid #c1c1c1;
+    margin-top: 70px;
+    margin-right: 20px;
 }
+
+/* Estilo para oscurece el texto del precio */
+.valor{
+    font-weight: bold !important;
+    font-size: 27px !important;
+}
+
+/* Estilo de opacidad del slider */
 #myCarousel2:before{
     content:'';
 	position: absolute;
@@ -147,16 +199,37 @@ color: #fff;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(255, 255, 250, 0.8);
+	background-color: rgba(255, 255, 250, 0.9);
 } 
+
+/* Estilo de los indicadores del slider */
 .carousel-indicators li{
     background-color: #515550 !important;
 }
 
+/* Estilo del margen del wrapper con el footer */
 .list-offers
 {
     margin-bottom: 4em;
 }
+
+/* Posicion del boton de la primera imagen */
+.list-services .offer_dos .icono-img .text-offer_dos .centrar button{
+    position: absolute;
+    bottom: 33px;
+    left: 33px;
+    width: 80%;
+}
+/* Estilo del padding del slider */
+.list-offers .item.right #myCarousel2 .carousel-inner .item.noimage {
+    padding: 70px 25px !important;
+}
+
+
+.list-offers .item.right{
+    position: relative;
+}
+
 /**************************************************** ESTILOS FOOTER ******************************************************/
 /* Estilo texto footer  */
 footer nav a{
@@ -178,13 +251,17 @@ footer nav a:hover{
 .footer-fluid{
     margin-top: 3em;
 }
+
 .redes {
     margin-top: 3em;
 }
 
+footer .redes ul li{
+    margin-right: 14px;
+}
 /* Aumentar el tamaño de los iconos de las redes sociales */
 .fa::before{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /* Estilo  imagen de fondo del footer */
@@ -207,3 +284,55 @@ footer:before {
 	right: 0;
 	background-color: rgba(0,0,0,0.8);
 }
+
+
+/************************************************************************************************/
+
+/* NO SE VISUALIZA RESPONSIVE DEBIDO A QUE EN EL INDEX.HTML FALTA UNA DE LAS ETIQUETAS IMPORTANTES PARA EL 
+FUNCIONAMIENTO RESPONSIVE QUE ES <meta name="viewport" content="width=device-width, user-scalable=no"> */
+
+
+/* Media query responsive design */
+@media(max-width:1200px){
+    .text-offer_dos{
+        left: 16px;
+    }
+    .list-services .offer_dos .icono-img .text-offer_dos .centrar button{
+        bottom: 30px;
+        left: 30px;
+    }
+}
+
+
+@media(max-width:991px){
+    .btn{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+@media(max-width:768px){
+
+}
+
+
+@media(max-width:560px){
+
+}
+
+
+@media(max-width:480px){
+
+}
+
+
+@media(max-width:360px){
+
+}
+
+
+@media(max-width:320px){
+
+}
+
